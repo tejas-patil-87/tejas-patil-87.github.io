@@ -327,7 +327,11 @@ p {
 		padding-top: 1rem;
 	}
 }
-
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Half Page */
 .center {
