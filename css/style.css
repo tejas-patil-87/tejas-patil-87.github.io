@@ -331,15 +331,11 @@ p {
 
 /* Half Page */
 .center {
-	.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  text-align: center;
+	text-align: center;
+  margin: auto;
+  width: 60%;
   padding: 20px;
   padding-top:30px;
-}
 }
 
 .Container:before {
