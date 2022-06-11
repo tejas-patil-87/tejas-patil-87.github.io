@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta -->
+    <title>Tejas Patil - About</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML1">
+    <meta name="keywords" content="HTML2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="./"><img src="images/Tejas%20Patil.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Demo.html">Demo Website</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="aboutus">
+            <div class="left">
+                <img class="selfImg" src="images/profile-modified.png" alt="picture" width="300" height="300">
+                <h1>Quality Assurance Engineer</h1>
+                <ul class="ull">
+                    <li>
+                        <strong>Name:</strong>&nbsp;Tejas Vilas Patil
+                    </li>
+                    <li>
+                        <strong>Phone:</strong>&nbsp;<a class="btn-about" href="tel:+919004300384">+91 9004300384</a>
+                    </li>
+                    <li>
+                        <strong>Location:</strong>&nbsp;IN
+                    </li>
+                    <li>
+                        <strong>Email:</strong>&nbsp;<a class="btn-about" href="mailto:tejasvp87@gmail.com" target="_blank" rel="noopener noreferrer">Send Mail</a>
+                    </li>
+                    <li>
+                        <strong>LinkedIn:</strong>&nbsp;<a class="btn-about" href="https://www.linkedin.com/in/tejas-patil-0087/" target="_blank" rel="noopener noreferrer">Tejas-Patil-0087</a>
+                        <!--
+                           <a href="https://www.linkedin.com/in/tejas-patil-0087/" target="_blank" rel="noopener noreferrer">
+                               <img border="0" alt="W3Schools" src="images/linkedin%20.png" width="30" height="30">
+-->
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <h2 id="portfolio"><strong>Portfolio</strong></h2>
+                <p>Proven skills in completing black, white, and grey box tests. Background writing and implementing test cases, developing testing plans, and identifying use cases. Fully versed in complete SDLC.
+                </p>
+                <hr>
+                <h2 id="skills"><strong>Skills</strong></h2>
+                <p align="center">
+                    <img class="testing" src="images/clipart1542261.png" alt="Software-testing" width="40" height="40">
+                    <img src="images/selenium-logo.svg" alt="Selenium" width="40" height="40">
+                    <img src="images/icons8-jira.svg" alt="JIRA" width="40" height="40">
+                    <img src="images/confluence.png" alt="confluence" width="40" height="40">
+                    <img src="images/icons8-java.svg" alt="Java" width="40" height="40">
+                    <!-- <img src="Resource/Python_logo_icon.png" alt="Python" width="40" height="40"> -->
+                    <img src="images/eclipse.svg" alt="Eclipse" width="40" height="40">
+                    <img src="images/bitbucket.png" alt="Bitbucket" width="40" height="40">
+                    <img src="images/cypress.svg" alt="cypress" width="40" height="40">
+                </p>
+                <hr>
+                <h2 id="experience"><strong>Experience</strong></h2>
+                <h4 id="sdet">SDET</h4>
+                <h4 id=" Easiloan"><i>Easiloan Techno Solution Pvt. Ltd</i> </h4>
+                <p> • Recommended changes and corrections to developers for optimal software performance and
+                    usability.
+                    <br>• Wrote and optimized test cases to maximize the success of manual software testing with consistent,
+                    thorough approaches.
+                    <br>• Built automated test scripts to handle repetitive software testing work.
+                    <br>• Tracked, prioritized, and organized defects with Jira, working with the development team to facilitate
+                    timely corrections.
+                    <br>• Documented testing procedures for developers and future testing use.
+                    <br>• Operated under Agile and Scrum frameworks to complete releases and well-organized sprints.
+                    <br>• Resolved Content issue by myself
+                </p>
+                <br>
+                <h4>QA Tester</h4>
+                <h4 id=" MLT"><i>MultiLiving Technologies Pvt. Ltd</i> </h4>
+                <p>• Pursued professional development opportunities to learn new testing tools and test strategies.
+                    <br>• Executed test cases, logged defects, and worked to resolve issues noted in the testing process.
+                    <br>• Developed and implemented tests to assess product quality of MultiLiving website, MultiLiving life,
+                    propel app and MLT assist app.
+                    <br>• Worked extended hours when necessary to meet deadlines.
+                    <br>• Advised manager of issues that could affect the schedule, budget, or quality of the product.
+                    <br>• Collaborated with Front end and Back End team for testing and release management to achieve highquality production of MultiLiving website, MultiLiving life, propel app, and MLT assist app.
+                    <br>• Monitored resolution of bugs, tested fixes, and helped developers tackle ongoing problems by
+                    providing QA perspective.
+                    <br>• Identified and tracked defects with Jira and supported developers in resolving problems by
+                    completing additional tests
+                </p>
+                <hr>
+                <h2 id="education"><strong>Education</strong></h2>
+                <h3 id="ExTC">Bachelor of engineering in electronics and telecommunication - (2019)</h3>
+                <p>Vishwaniketan's Institute of Management Entrepreneurship and Engineering Technology - University of Mumbai</p>
+                <hr>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------------------JS for toggle menu--------------------------------------------------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+</html>

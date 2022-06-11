@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Meta -->
+    <title>Tejas Patil - Demo Website</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML1">
+    <meta name="keywords" content="HTML2">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="./"><img src="images/Tejas%20Patil.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Demo.html">Demo Website</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="demo">
+            <form class="demoform">
+                <label for="fname">First name:</label>
+                <input type="text" id="fname" name="fname" placeholder="Tejas" input onkeydown="return /[a-z]/i.test(event.key)">
+                <label for="lname">Last name:</label>
+                <input type="text" id="lname" name="lname" placeholder="Patil" input onkeydown="return /[a-z]/i.test(event.key)">
+                <label for="email">Email:</label>
+                <input autocomplete="off" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="name@example.com" type="text" id="userEmail">
+                <br>
+                <div class="radio-btn">
+                    <label for="gen">Select Gender</label>
+                    <input type="radio" id="html" name="gender" value="HTML">
+                    <label for="Male">Male</label>
+                    <input type="radio" id="css" name="gender" value="CSS">
+                    <label for="Female">Female</label>
+                    <input type="radio" id="css" name="gender" value="CSS">
+                    <label for="Other">Other</label>
+                    <br><br>
+                    <label for="Other">Favorite programming language:</label>
+                    <input type="checkbox" id="Java" name="Java" value="Java">
+                    <label for="Java">Java</label>&nbsp;&nbsp;
+                    <input type="checkbox" id="Python" name="Python" value="Python">
+                    <label for="Python">Python</label>&nbsp;&nbsp;
+                    <input type="checkbox" id="JavaScript" name="JavaScript" value="JavaScript">
+                    <label for="JavaScript">JavaScript</label>&nbsp;&nbsp;
+                    <input type="checkbox" id="C/C++" name="C/C++" value="C/C++">
+                    <label for="C/C++">C/C++</label>&nbsp;&nbsp;
+                    <input type="checkbox" id="C#" name="C#" value="C#">
+                    <label for="C#">C#</label>&nbsp;&nbsp;
+                    <input type="checkbox" id="Kotlin" name="Kotlin" value="Kotlin">
+                    <label for="Kotlin">Kotlin</label>&nbsp;&nbsp;
+                    <input type="checkbox" id="Swift" name="Swift" value="Swift">
+                    <label for="Swift">Swift</label>&nbsp;&nbsp;
+                    <br><br>
+                    <label for="img">Select image:</label>
+                    <input type="file" id="img" name="img" accept="image/*">
+                </div>
+                <br><br>
+                <label for="mobile">Mobile:</label>
+                <input required="" autocomplete="off" pattern="[789][0-9]{9}" minlength="10" maxlength="10" placeholder="Mobile Number" type="text" id="userNumber">
+                <br>
+                <label for="add">Address:</label>
+                <textarea placeholder="Address" rows="5" cols="20" id="currentAddress" class="form-control" spellcheck="false"></textarea>
+                <br>
+                <label for="birthday">Birthday:</label>
+                <input class="date" type="date" id="datePickerId" name="birthday" value="09/03/1996" min="1970-01-01" max="0" data-date-inline-picker="true">
+                <br>
+                <div class="Country">
+                    <script type="text/javascript" src="countries.js"></script>
+                    Select Country: <select id="country" name="country" placeholder="Enter city"></select>
+                    <br>
+                    Select State: <select name="state" id="state" placeholder="Enter city"></select>
+                </div>
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter city" input onkeydown="return /[a-z]/i.test(event.key)">
+                <br>
+                <button id="Button1" type="reset" class="submit" value="Refresh">Reset</button>
+                <br>
+                <input class="submit" type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+    <!--------------------------------------------------JS for toggle menu--------------------------------------------------------->
+    <script language="javascript">
+        populateCountries("country", "state"); // first parameter is id of country drop-down and second parameter is id of state drop-down
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+        src = "./country-states.json"
+        datePickerId.max = new Date().toISOString().split("T")[0];
+    </script>
+</body>
+</html>
