@@ -79,7 +79,7 @@ nav img {
 }
 
 text-box hl {
-    font-size: 10px
+    font-size: 8px
         /* 40px/16=2.5em */
         padding: auto;
 }
@@ -91,7 +91,7 @@ text-box hl {
 
 .text-box p {
     margin: 12px 0 40px;
-    font-size: 18px;
+    font-size: 15px;
     color: #fff;
     padding: 15px;
 }
