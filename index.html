@@ -1,54 +1,253 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <!-- Meta -->
-    <title>Tejas Patil - Resume Portfolio</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="HTML1">
-    <meta name="keywords" content="HTML2">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Styles -->
-    <link href="style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" href="images/Tejas%20Patil.png">
-</head>
-<body>
-    <section class="header">
-        <nav>
-            <a href="./"><img src="images/Tejas%20Patil.png"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
-                <ul>
-                    <li><a href="./">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="Demo.html">Demo Website</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
-        </nav>
-        <div class="text-box">
-            <a class="tejas"><strong>Tejas Patil</strong></a>
-            <p>Experienced Software Tester with hands-on background in testing various development projects.Successful at testing based on product requirements to produce on-target deliverables.Proven skills in completing black, white and grey box tests. Background writing and implementing test cases, developing testing plans and identifying use cases. Fully versed in complete SDLC.</p>
-            <u> <a href="https://drive.google.com/file/d/1W-ZYEHzFyzORyL_LhA5qGJ7p-Smez9XA/view?usp=sharing" class="mail-btn" target="_blank"> Download Resume </a> </u>
-            <br><br>
-            <u> <a href="https://www.linkedin.com/in/tejas-patil-0087/" class="lnkdn-btn" target="_blank"> LinkedIn Profile </a> </u>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="img/Tejas%20Patil.png">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+  </head>
+  <body class="main-content">
+    <header class="section sec1 header active" id="home">
+      <div class="header-cantent">
+        <div class="left-header">
+          <div class="h-shape"></div>
+          <div class="image">
+            <img src="img/main_img-removebg-preview.jpg" alt="" />
+          </div>
         </div>
-    </section>
-    <!--------------------------------------------------about--------------------------------------------------------->
-    <!--------------------------------------------------Demo website--------------------------------------------------------->
-    <!--------------------------------------------------JS for toggle menu--------------------------------------------------------->
-     <script>
-        var navLinks = document.getElementById("navLinks");
-        function showMenu() {
-            navLinks.style.right = "0";
-        }
-        function hideMenu() {
-            navLinks.style.right = "-200px";
-        }
-    </script>
-</body>
+        <div class="right-header">
+          <h1 class="name">
+            Hi ,I'm <span>Tejas Patil</span>
+            A Software Tester
+          </h1>
+          <p>
+            Experienced Software Tester with hands-on background in testing
+            various development projects.Successful at testing based on product
+            requirements to produce on-target deliverables.Proven skills in
+            completing black, white and grey box tests. Background writing and
+            implementing test cases, developing testing plans and identifying
+            use cases. Fully versed in complete SDLC.
+          </p>
+          <div class="Btn" >
+            <div class="btn-con">
+              <a target="_blank"
+                href="https://drive.google.com/file/d/1FeYTVkitM26gwrE765HJGRwbeLaLE-5X/view?usp=sharing"
+                class="main-btn">
+                <span class="btn-text">Resume</span>
+                <span class="btn-icon"><i class="fas fa-download"></i></span>
+              </a>
+            </div>  
+              <div class="linkedin">
+                <a target="_blank" href="https://www.linkedin.com/in/tejas-patil-0087/" class="ldin-btn" >
+                  <span class="btn-text">linkedin</span>
+                  <span class="btn-icon"><i class="fa-brands fa-linkedin"></i></span>
+                </a>
+              </div> 
+                
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section sec2 about" id="about">
+        <div class="main-title">
+          <h2>About <span>me </span> <span class="big-text">my stats</span></h2>
+        </div>
+        <div class="about-contanier">
+          <div class="aboutus">
+            <div class="right">
+              <!-- <div class="arrow">
+                <div class="down">
+                  <i class="fa-solid fa-arrow-down fa-beat-fade fa-xs"></i>
+                </div>
+               
+              </div> -->
+                <h2 id="portfolio"><strong>Portfolio</strong></h2>
+                <p>Dynamic Software Tester with experience writing test scripts, debugging and implementing automation tests to help applications run smoothly. Collaborates with software team in continuous build and deployment process. Excels at learning new software tools and best practices in software quality assurance.
+                </p>
+                <hr>
+                <h2 id="skills"><strong>Skills</strong></h2>
+                <a class="skill-img" align="center">
+                    <img class="testing" src="img/Software testing.png" alt="Software-testing" width="60" height="40">
+                    <img src="img/selenium-logo.svg" alt="Selenium" width="40" height="40">
+                    <img src="img/icons8-jira.svg" alt="JIRA" width="40" height="40">
+                    <img src="img/confluence.png" alt="confluence" width="40" height="40">
+                    <img src="img/java.svg" alt="Java" width="40" height="40">
+                    <!-- <img src="Resource/Python_logo_icon.png" alt="Python" width="40" height="40"> -->
+                    <img src="img/eclipse.svg" alt="Eclipse" width="40" height="40">
+                    <img src="img/bitbucket.png" alt="Bitbucket" width="40" height="40">
+                    <img src="img/cypress.svg" alt="cypress" width="40" height="40">
+                </a>
+
+
+                <hr>
+                <h2 id="experience"><strong>Experience</strong></h2>
+                <h5>Software Tester</h5>
+                <h4>Rejolut Technology Solution Pvt. Ltd <span>(Spet 2022 - Till Now)</span> </h4>
+                <p> • Smart Contract Testing: Demonstrated proficiency in testing smart contracts for blockchain applications, ensuring their functionality, security, and adherence to business requirements.
+                    <br>• Skilled in testing the integration of blockchain applications with external systems or APIs, ensuring seamless data exchange and interoperability.
+                    <br>• Understanding of user experience testing principles and experience in assessing the usability and responsiveness of blockchain applications from an end-user perspective.
+                    <br>•  Experienced in verifying the immutability and integrity of data stored on the blockchain, ensuring the accuracy and consistency of data across the network.
+                    <br>• Wrote muanal tetscases and maintain testcases for web3 applications.
+                    <br>• •	Created cypress scripts for automation.
+                    <!-- <br>•  -->
+                </p>
+                <br> 
+                <h5>Quality Analyst </h5>
+                <h4 id=" Easiloan" >Easiloan Techno Solution Pvt. Ltd <span> (Spet 2021 - Spet 2022)</span> </h4>
+                <p> • Recommended changes and corrections to developers for optimal software performance and
+                    usability.
+                    <br>• Wrote and optimized test cases to maximize the success of manual software testing with consistent,
+                    thorough approaches.
+                    <br>• Built automated test scripts to handle repetitive software testing work.
+                    <br>• Tracked, prioritized, and organized defects with Jira, working with the development team to facilitate
+                    timely corrections.
+                    <br>• Documented testing procedures for developers and future testing use.
+                    <br>• Operated under Agile and Scrum frameworks to complete releases and well-organized sprints.
+                    <br>• Resolved Content issue by myself
+                </p>
+                <br>
+                <h5>Quality Analyst</h5>
+                <h4 id=" MLT">MultiLiving Technologies Pvt. Ltd <span>(Mar 2021 - Spet 2021)</span></h4>
+                <p>• Pursued professional development opportunities to learn new testing tools and test strategies.
+                    <br>• Executed test cases, logged defects, and worked to resolve issues noted in the testing process.
+                    <br>• Developed and implemented tests to assess product quality of MultiLiving website, MultiLiving life,
+                    propel app and MLT assist app.
+                    <br>• Worked extended hours when necessary to meet deadlines.
+                    <br>• Advised manager of issues that could affect the schedule, budget, or quality of the product.
+                    <br>• Collaborated with Front end and Back End team for testing and release management to achieve highquality production of MultiLiving website, MultiLiving life, propel app, and MLT assist app.
+                    <br>• Monitored resolution of bugs, tested fixes, and helped developers tackle ongoing problems by
+                    providing QA perspective.
+                    <br>• Identified and tracked defects with Jira and supported developers in resolving problems by
+                    completing additional tests
+                </p>
+                <hr>
+                <h2 id="education"><strong>Education</strong></h2>
+                <h3 id="ExTC">Bachelor of engineering in electronics and telecommunication - (2019)</h3>
+                <p>Vishwaniketan's Institute of Management Entrepreneurship and Engineering Technology -University of Mumbai</p>
+                <hr>
+            </div>
+        </div>
+            <div class="about-item">
+                  <div class="abt-text">
+                    
+                  </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section sec3 web" id="web">
+        <div class="website">
+          <h2>Register Here</h2>
+          <form class="demo-web" id ="sheetdb-form" method ="post" action="https://sheetdb.io/api/v1/4pm7n75xrz7xk">
+            <label for="first-name">First name:</label>
+            <input type="text" id="fname" name="data[first-name]" placeholder="Tejas" input="" onkeydown="return /[a-z]/i.test(event.key)">
+            <label for="last-name">Last name:</label>
+            <input type="text" id="lname" name="data[last-name]" placeholder="Patil" input="" onkeydown="return /[a-z]/i.test(event.key)">
+            <label for="email">Email:</label>
+            <input name="data[email]" autocomplete="off" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="name@example.com" type="text" id="userEmail">
+            <label for="mobile">Mobile:</label>
+            <input name="data[mobile]" required="" autocomplete="off" pattern="[789][0-9]{9}" minlength="10" maxlength="10" placeholder="Mobile Number" type="text" id="userNumber">
+            <br>
+            <div class="radio-btn">
+              <label for="gender">Select Gender</label>
+              <input type="radio" id="html" name="data[gender]" value="Male">
+              <label for="Male">Male</label>
+              <input type="radio" id="css" name="data[gender]" value="Female">
+              <label for="Female">Female</label>
+              <input type="radio" id="css" name="data[gender]" value="Other">
+              <label for="Other">Other</label>
+              <br><br>
+              <label for="programming-language">Favorite programming language:</label>
+              <input type="checkbox" id="Java" name="data[Java]" value="Java">
+              <label for="Java">Java</label>&nbsp;&nbsp;
+              <input type="checkbox" id="Python" name="data[Python]" value="Python">
+              <label for="Python">Python</label>&nbsp;&nbsp;
+              <input type="checkbox" id="JavaScript" name="data[JavaScript]" value="JavaScript">
+              <label for="JavaScript">JavaScript</label>&nbsp;&nbsp;
+              <input type="checkbox" id="C/C++" name="data[C/C++]" value="C/C++">
+              <label for="C/C++">C/C++</label>&nbsp;&nbsp;
+              <input type="checkbox" id="C#" name="data[C#]" value="C#">
+              <label for="C#">C#</label>&nbsp;&nbsp;
+              <input type="checkbox" id="Kotlin" name="data[Kotlin]" value="Kotlin">
+              <label for="Kotlin">Kotlin</label>&nbsp;&nbsp;
+              <input type="checkbox" id="Swift" name="data[Swift]" value="Swift">
+              <label for="Swift">Swift</label>&nbsp;&nbsp;
+              <br><br>
+              <label for="img">Select image:</label>
+              <input type="file" id="img" name="img" accept="image/*">
+              </div>
+              <br>
+              <label for="address">Address:</label>
+              <textarea name="data[address]" placeholder="Address" rows="5" cols="20" id="currentAddress" class="form-control" spellcheck="false"></textarea>
+              <br>
+              <label for="birthday">Birthday:</label>
+              <input class="date" type="date" id="datePickerId" name="data[birthday]" value="09/03/1996" min="1970-01-01" max="2023-04-26" data-date-inline-picker="true">
+              <br>
+              <div class="Country">
+                <script type="text/javascript" src="countries.js"></script>
+                Select Country: <select id="country" name="data[country]" placeholder="Enter city"></select>
+                <br>
+                Select State: <select name="data[state]" id="state" placeholder="Enter city"></select>
+              </div>
+              <label for="city">City:</label>
+                <input type="text" id="city" name="data[city]" placeholder="Enter city" input onkeydown="return /[a-z]/i.test(event.key)">
+                <br>
+                <button id="reset" type="reset" class="submit" value="Refresh">Reset</button>
+                <br>
+                <input class="submit" type="submit" value="Submit">
+          </form>
+        </div>
+      </section>
+      <section class="section sec4 blogs" id="blogs">
+        <div class="blog">
+          <h2>Comming Soon</h2>
+        </div>
+      </section>
+      <section class="section sec5 contact" id="contact">
+        <div class="contact-box">
+          <form name="contactF" class="contactF"action="https://sheetdb.io/api/v1/zjehhuuiq77qn" method="post" id="sheetdb-feedback">
+            <label for="first-name">First name:</label>
+            <input type="text" id="first-name" name="data[first-name]" placeholder="Tejas" input="" onkeydown="return /[a-z]/i.test(event.key)">
+            <label for="last-name">Last name:</label>
+            <input type="text" id="last-name" name="data[last-name]" placeholder="Patil" input="" onkeydown="return /[a-z]/i.test(event.key)">
+            <label for="email">Email:</label>
+            <input autocomplete="off" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="name@example.com" type="text" id="userEmail"name="data[email]">
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="data[subject]" placeholder="Type your message or share your feedback , suggestions for improvement..." style="height:200px"></textarea>
+            <input class="submit" type="submit" value="Submit">
+        </form>
+        </div>
+      </section>
+    </main>
+    <div class="controlls">
+      <div class="control control-1 active-btn" data-id="home">
+        <i class="fas fa-home"> </i>
+      </div>
+      <div class="control control-2" data-id="about">
+        <i class="fas fa-user"> </i>
+      </div>
+      <!-- <div class="control control-3" data-id="portfolio">
+        <i class="fa-sharp fa-solid fa-globe"></i>
+      </div> -->
+      <div class="control control-3" data-id="web">
+        <i class="fa-sharp fa-solid fa-globe"></i>
+      </div>
+      <div class="control control-4" data-id="blogs">
+        <i class="far fa-newspaper"> </i>
+      </div>
+      <div class="control control-5" data-id="contact">
+        <i class="fas fa-envelope-open"> </i>
+      </div>
+    </div>
+
+    <!-- scipt -->
+    <script src="app.js"></script>
+  </body>
 </html>
