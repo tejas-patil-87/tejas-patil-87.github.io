@@ -455,9 +455,11 @@ section {
 .website {
   display: grid;
   place-items: center;
-  background-color: var(--color-grey-3);
-  padding: 13px;
-  opacity: 0.9;
+  width: 70%;
+  margin: 2rem auto;
+  background-color: var(--color-grey-4);
+  padding: 16px;
+  opacity: 0.8;
   border-radius: 1rem;
 }
 .website h2 {
@@ -475,6 +477,7 @@ section {
   border: 2px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  resize: none;
 }
 .website .submit {
   width: 100%;
@@ -487,10 +490,10 @@ section {
   cursor: pointer;
 }
 .website .submit:hover {
-  background-color: var(--color-grey-5);
+  background-color: var(--color-grey-3);
 }
 .website #reset:hover {
-  background-color: var(--color-grey-4);
+  background-color: var(--color-grey-5);
 }
 
 .blog h2 {
@@ -521,6 +524,7 @@ section {
   border: 2px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
+  resize: none;
 }
 .contactF .submit {
   width: 100%;

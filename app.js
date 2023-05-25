@@ -48,7 +48,7 @@ form.addEventListener("submit", (e) => {
     .then((html) => {
       // you can put any JS code here
       // window.open("page2.html", "_blank");
-
+      form.reset();
       console.log("data stored sucessfully");
     });
 });
@@ -64,6 +64,7 @@ form.addEventListener("submit", (e) => {
     .then((html) => {
       // you can put any JS code here
       // window.open("page2.html", "_blank");
+      form.reset();
       console.log("data stored sucessfully");
     });
 });
