@@ -101,6 +101,33 @@ section {
   transform: translateY(-50%);
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+}
+.controlls #home-icon,
+.controlls #about-icon,
+.controlls #web-icon,
+.controlls #blogs-icon,
+.controlls #contact-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: small;
+}
+.controlls #home-icon span,
+.controlls #about-icon span,
+.controlls #web-icon span,
+.controlls #blogs-icon span,
+.controlls #contact-icon span {
+  visibility: hidden;
+}
+.controlls #home-icon:hover span,
+.controlls #about-icon:hover span,
+.controlls #web-icon:hover span,
+.controlls #blogs-icon:hover span,
+.controlls #contact-icon:hover span {
+  visibility: visible;
+  text-align: center;
 }
 .controlls .active-btn {
   background-color: var(--color-secondary) !important;

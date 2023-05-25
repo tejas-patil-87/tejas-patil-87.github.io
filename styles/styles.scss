@@ -129,6 +129,31 @@ section {
   transform: translateY(-50%);
   align-items: center;
   justify-content: center;
+  gap: 1rem;
+
+  #home-icon,
+  #about-icon,
+  #web-icon,
+  #blogs-icon,
+  #contact-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: small;
+
+    span {
+      visibility: hidden;
+
+    }
+
+    &:hover {
+      span {
+        visibility: visible;
+        text-align: center;
+      }
+    }
+  }
 
   .active-btn {
     background-color: var(--color-secondary) !important;
@@ -160,6 +185,8 @@ section {
     }
   }
 }
+
+
 
 // header content
 .header-cantent {
