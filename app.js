@@ -31,6 +31,12 @@ function PageTransitions() {
       element.classList.add("active");
     }
   });
+  //toggle theme
+  const themeBtn = document.querySelector(".theme-btn");
+  themeBtn.addEventListener("click", function (e) {
+    let element = document.body;
+    element.classList.toggle("light-mode");
+  });
 }
 
 PageTransitions();
@@ -54,7 +60,7 @@ form.addEventListener("submit", (e) => {
 });
 
 var formContact = document.getElementById("sheetdb-feedback");
-formContact.addEventListener("submit", (e) => {
+formContact.addEventListener("click", (e) => {
   e.preventDefault();
   fetch(formContact.action, {
     method: "POST",

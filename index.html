@@ -57,7 +57,7 @@
     <main>
       <section class="section sec2 about" id="about">
         <div class="main-title">
-          <h2>About <span>me </span> <span class="big-text">my stats</span></h2>
+          <h2>About <span>me </span> <span class="big-text">My Stats</span></h2>
         </div>
         <div class="about-contanier">
           <div class="aboutus">
@@ -141,28 +141,33 @@
         </div>
       </section>
       <section class="section sec3 web" id="web">
+        <div class="main-title">
+          <h2>Demo <span>Website</span> <span class="big-text">My Stats</span> </h2>
+        </div>
         <div class="website">
+          
           <h2>Register Here</h2>
           <form class="demo-web" id ="sheetdb-form" method ="post" action="	https://sheetdb.io/api/v1/4pm7n75xrz7xk">
-            <label for="first-name">First name:</label>
-            <input type="text" id="fname" name="data[first-name]" placeholder="Tejas" input="" onkeydown="return /[a-z]/i.test(event.key)">
-            <label for="last-name">Last name:</label>
-            <input type="text" id="lname" name="data[last-name]" placeholder="Patil" input="" onkeydown="return /[a-z]/i.test(event.key)">
-            <label for="email">Email:</label>
-            <input name="data[email]" autocomplete="off" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="name@example.com" type="text" id="userEmail">
-            <label for="mobile">Mobile:</label>
-            <input name="data[mobile]" required="" autocomplete="off" pattern="[789][0-9]{9}" minlength="10" maxlength="10" placeholder="Mobile Number" type="text" id="userNumber">
-            <br>
-            <div class="radio-btn">
-              <label for="gender">Select Gender</label>
+          <div class="form-body">
+            <label for="first-name">First name</label>
+            <input type="text" id="fname" name="data[first-name]" placeholder="Enter First Name" input="" onkeydown="return /[a-z]/i.test(event.key)">
+            <label for="last-name">Last name</label>
+            <input type="text" id="lname" name="data[last-name]" placeholder="Enter Last Name" input="" onkeydown="return /[a-z]/i.test(event.key)">
+            <label for="email">Email</label>
+            <input name="data[email]" autocomplete="off" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="Enetr Email ID" type="text" id="userEmail">
+            <label for="mobile">Mobile</label>
+            <input name="data[mobile]" required="" autocomplete="off" pattern="[789][0-9]{9}" minlength="10" maxlength="10" placeholder="Enter Mobile Number" type="text" id="userNumber">
+            <label for="gender">Select Gender</label>
+            <div class="gender-btn">
               <input type="radio" id="html" name="data[gender]" value="Male">
               <label for="Male">Male</label>
               <input type="radio" id="css" name="data[gender]" value="Female">
               <label for="Female">Female</label>
               <input type="radio" id="css" name="data[gender]" value="Other">
               <label for="Other">Other</label>
-              <br><br>
-              <label for="programming-language">Favorite programming language:</label>
+            </div>  
+            <label for="programming-language">Favorite programming language:</label>
+            <div class="fav-lang">
               <input type="checkbox" id="Java" name="data[Java]" value="Java">
               <label for="Java">Java</label>&nbsp;&nbsp;
               <input type="checkbox" id="Python" name="data[Python]" value="Python">
@@ -177,50 +182,117 @@
               <label for="Kotlin">Kotlin</label>&nbsp;&nbsp;
               <input type="checkbox" id="Swift" name="data[Swift]" value="Swift">
               <label for="Swift">Swift</label>&nbsp;&nbsp;
-              <br><br>
+            </div>
               <label for="img">Select image:</label>
               <input type="file" id="img" name="img" accept="image/*">
-              </div>
-              <br>
-              <label for="address">Address:</label>
-              <textarea name="data[address]" placeholder="Address" rows="5" cols="20" id="currentAddress" class="form-control" spellcheck="false"></textarea>
-              <br>
-              <label for="birthday">Birthday:</label>
-              <input class="date" type="date" id="datePickerId" name="data[birthday]" value="09/03/1996" min="1970-01-01" max="2023-04-26" data-date-inline-picker="true">
-              <br>
-              <div class="Country">
+              <label for="address">Address</label>
+              <textarea name="data[address]" placeholder="Enter Address" rows="5" cols="20" id="currentAddress" class="form-control" spellcheck="false"></textarea>
+              <label for="birthday">Birthday</label>
+              <input class="date" type="date" id="datePickerId" name="data[birthday]" value="09/03/1996" min="1970-01-01" max="2023-04-26" data-date-inline-picker="true" placeholder="Enter DOB">
+             
                 <script type="text/javascript" src="countries.js"></script>
-                Select Country: <select id="country" name="data[country]" placeholder="Enter city"></select>
-                <br>
-                Select State: <select name="data[state]" id="state" placeholder="Enter city"></select>
-              </div>
-              <label for="city">City:</label>
+                Select Country<select id="country" name="data[country]" placeholder="Enter city"></select>
+                Select State<select name="data[state]" id="state" placeholder="Enter city"></select>
+            
+              <label for="city">City</label>
                 <input type="text" id="city" name="data[city]" placeholder="Enter city" input onkeydown="return /[a-z]/i.test(event.key)">
-                <!-- <br>
-                <button id="reset" type="reset" class="submit" value="Refresh">Reset</button> -->
-                <br>
-                <input class="submit" type="submit" value="Submit">
+               
+              <!-- <button id="reset" type="reset" class="submit" value="Refresh">Reset</button> -->
+             
+          </div>
+          <input class="submit" type="submit" value="Submit">
           </form>
         </div>
       </section>
       <section class="section sec4 blogs" id="blogs">
         <div class="blog">
-          <h2>Comming Soon</h2>
+          <div class="main-title">
+            <h2>My <span>blog</span> <span class="big-text">My Stats</span> </h2>
+          </div>
+          <h1>Comming Soon</h1>
         </div>
       </section>
       <section class="section sec5 contact" id="contact">
-        <div class="contact-box">
-          <form name="contactF" class="contactF"action="https://sheetdb.io/api/v1/zjehhuuiq77qn" method="post" id="sheetdb-feedback">
-            <label for="first-name">First name:</label>
-            <input type="text" id="first-name" name="data[first-name]" placeholder="Tejas" input="" onkeydown="return /[a-z]/i.test(event.key)">
-            <label for="last-name">Last name:</label>
-            <input type="text" id="last-name" name="data[last-name]" placeholder="Patil" input="" onkeydown="return /[a-z]/i.test(event.key)">
-            <label for="email">Email:</label>
-            <input autocomplete="off" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="name@example.com" type="text" id="userEmail"name="data[email]">
-            <label for="subject">Subject</label>
-            <textarea id="subject" name="data[subject]" placeholder="Type your message or share your feedback , suggestions for improvement..." style="height:200px"></textarea>
-            <input class="submit" type="submit" value="Submit">
-        </form>
+        <div class="contact-container">
+          <div class="main-title">
+            <h2>Contact <span>Me</span> <span class="big-text">My Stats</span> </h2>
+          </div>
+          <div class="contact-content-con">
+            <div class="left-contact">
+               <h4>Contact me here</h4>
+               <div class="contact-info">
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                    Location
+                  </div>
+                  <p>
+                        : Navi Mumbai, Maharashtra, India.
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                    Email
+                  </div>
+                  <p>
+                    <a href = "mailto:tejasvp87@gmail.com">: Tejasvp87@gmail.com</a>
+                    
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-user-graduate"></i>
+                    Education
+                  </div>
+                  <p>
+                    : University of Mumbai
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-mobile"></i>
+                    Mobile Number
+                  </div>
+                  <p>
+                    <a href="tel:+919004300384">+91 9004 3003 84</a>
+                  </p>
+                </div>
+                <div class="contact-item">
+                  <div class="icon">
+                    <i class="fas fa-globe-asia"></i>
+                    language
+                  </div>
+                  <p>
+                    : English, Hindi, Marathi.
+                  </p>
+                </div>
+               </div>
+            </div>
+            <div class="right-contact">
+              <form action="https://sheetdb.io/api/v1/zjehhuuiq77qn" class="contact-form"  method="post" id="sheetdb-feedback">
+                <div class="input-control i-c-2">
+                  <input type="text" id="first-name" name="data[first-name]" placeholder="Tejas" input="" onkeydown="return /[a-z]/i.test(event.key)">
+                  <input type="text" id="last-name" name="data[last-name]" placeholder="Patil" input="" onkeydown="return /[a-z]/i.test(event.key)">
+                </div>
+                  <div class="input-control">
+                  <input autocomplete="off" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="name@example.com" type="text" id="userEmail"name="data[email]">
+                </div>
+                <div class="input-control">
+                  <textarea id="subject" name="data[subject]" placeholder="Type your message or share your feedback , suggestions for improvement..." style="height:200px"></textarea>
+                </div>
+                <div class="input-control">
+                  </div>
+                  <div class="submit-btn">
+                    <a href="#" class="main-btn" type="submit" value="submit">
+                      <span class="btn-text1">Submit</span>
+                      <span class="btn-text1"><i class="fa-solid fa-paper-plane"></i></span>
+                    </a>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
         </div>
       </section>
     </main>
@@ -252,7 +324,9 @@
         <span>Contact</span>
       </div>
     </div>
-
+    <div class="theme-btn">
+      <i class="fas fa-adjust"></i>
+    </div>
     <!-- scipt -->
     <script src="app.js"></script>
   </body>
