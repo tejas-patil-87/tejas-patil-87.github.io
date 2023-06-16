@@ -19,7 +19,7 @@
         <div class="left-header">
           <div class="h-shape"></div>
           <div class="image">
-            <img src="img/main_img-removebg-preview.jpg" alt="" />
+            <img src="img/My project.png" alt="" />
           </div>
         </div>
         <div class="right-header">
@@ -159,32 +159,40 @@
             <input name="data[mobile]" required="" autocomplete="off" pattern="[789][0-9]{9}" minlength="10" maxlength="10" placeholder="Enter Mobile Number" type="text" id="userNumber">
             <label for="gender">Select Gender</label>
             <div class="gender-btn">
-              <input type="radio" id="html" name="data[gender]" value="Male">
               <label for="Male">Male</label>
-              <input type="radio" id="css" name="data[gender]" value="Female">
+              <input type="radio" id="html" name="data[gender]" value="Male">
               <label for="Female">Female</label>
-              <input type="radio" id="css" name="data[gender]" value="Other">
+              <input type="radio" id="css" name="data[gender]" value="Female">
               <label for="Other">Other</label>
+              <input type="radio" id="css" name="data[gender]" value="Other">
             </div>  
             <label for="programming-language">Favorite programming language:</label>
             <div class="fav-lang">
-              <input type="checkbox" id="Java" name="data[Java]" value="Java">
-              <label for="Java">Java</label>&nbsp;&nbsp;
-              <input type="checkbox" id="Python" name="data[Python]" value="Python">
-              <label for="Python">Python</label>&nbsp;&nbsp;
-              <input type="checkbox" id="JavaScript" name="data[JavaScript]" value="JavaScript">
-              <label for="JavaScript">JavaScript</label>&nbsp;&nbsp;
-              <input type="checkbox" id="C/C++" name="data[C/C++]" value="C/C++">
-              <label for="C/C++">C/C++</label>&nbsp;&nbsp;
-              <input type="checkbox" id="C#" name="data[C#]" value="C#">
-              <label for="C#">C#</label>&nbsp;&nbsp;
-              <input type="checkbox" id="Kotlin" name="data[Kotlin]" value="Kotlin">
-              <label for="Kotlin">Kotlin</label>&nbsp;&nbsp;
-              <input type="checkbox" id="Swift" name="data[Swift]" value="Swift">
-              <label for="Swift">Swift</label>&nbsp;&nbsp;
+              
+              <label for="Java">Java</label>
+              <input type="checkbox" id="Java" name="data[programming-language]" value="Java">&nbsp;&nbsp;
+             
+              <label for="Python">Python</label>
+              <input type="checkbox" id="Python" name="data[programming-language]" value="Python">&nbsp;&nbsp;
+
+              
+              <label for="JavaScript">JavaScript</label>
+              <input type="checkbox" id="JavaScript" name="data[programming-language]" value="JavaScript">&nbsp;&nbsp;
+              
+              <label for="C/C++">C/C++</label>
+              <input type="checkbox" id="C/C++" name="data[programming-language]" value="C/C++">&nbsp;&nbsp;
+
+              <label for="C#">C#</label>
+              <input type="checkbox" id="C#" name="data[programming-language]" value="C#">&nbsp;&nbsp;
+              
+              <label for="Kotlin">Kotlin</label>
+              <input type="checkbox" id="Kotlin" name="data[programming-language]" value="Kotlin">&nbsp;&nbsp;
+              
+              <label for="Swift">Swift</label>
+              <input type="checkbox" id="Swift" name="data[programming-language]" value="Swift">
             </div>
               <label for="img">Select image:</label>
-              <input type="file" id="img" name="img" accept="image/*">
+              <input type="file" id="img" name="data[img]" accept="image/*">
               <label for="address">Address</label>
               <textarea name="data[address]" placeholder="Enter Address" rows="5" cols="20" id="currentAddress" class="form-control" spellcheck="false"></textarea>
               <label for="birthday">Birthday</label>
@@ -200,7 +208,7 @@
               <!-- <button id="reset" type="reset" class="submit" value="Refresh">Reset</button> -->
              
           </div>
-          <input class="submit" type="submit" value="Submit">
+           <input class="submit" type="submit" value="Submit">
           </form>
         </div>
       </section>

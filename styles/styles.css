@@ -219,12 +219,10 @@ section {
 }
 .header-cantent .left-header .image {
   border-radius: var(--br-sm-2);
-  width: 26rem;
-  height: auto;
-  margin-top: 10rem;
-  margin-left: 10rem;
-  margin-right: 5rem;
-  background-color: var(--color-black);
+  width: 55%;
+  height: 88%;
+  margin-left: 5rem;
+  background: radial-gradient(circle, rgba(238, 174, 202, 0.9220063025) 0%, rgb(96, 144, 201) 100%);
   transition: all 0.4s ease-in-out;
 }
 .header-cantent .left-header .image img {

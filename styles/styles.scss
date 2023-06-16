@@ -241,7 +241,6 @@ section {
 .header-cantent {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
   height: 100%;
 
   .left-header {
@@ -263,12 +262,13 @@ section {
 
     .image {
       border-radius: var(--br-sm-2);
-      width: 26rem;
-      height: auto;
-      margin-top: 10rem;
-      margin-left: 10rem;
-      margin-right: 5rem;
-      background-color: var(--color-black);
+      width: 55%;
+      height: 88%;
+      // margin-top: 10rem;
+      // margin-left: 10rem;
+      margin-left: 5rem;
+      // background-color: var(--color-black);
+      background: radial-gradient(circle, rgba(238, 174, 202, 0.9220063025210083) 0%, rgba(96, 144, 201, 1) 100%);
       transition: all .4s ease-in-out;
 
       img {

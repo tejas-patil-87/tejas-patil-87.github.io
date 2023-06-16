@@ -46,6 +46,13 @@ populateCountries("country", "state"); // first parameter is id of country drop-
 var form = document.getElementById("sheetdb-form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  const formData = new FormData(e.target);
+  const checkboxData = {};
+
+  // Process checkbox data
+  for (let checkbox of formData.entries()) {
+    checkboxData[checkbox[0]] = checkbox[1] === "on"; // Convert checkbox value to boolean
+  }
   fetch(form.action, {
     method: "POST",
     body: new FormData(document.getElementById("sheetdb-form")),
