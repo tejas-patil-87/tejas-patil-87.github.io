@@ -404,7 +404,7 @@ section {
       z-index: -1;
       transform: translate(-50%, -50%);
       font-weight: 800;
-      font-size: 5rem !important;
+      font-size: 5rem;
     }
   }
 }
@@ -508,8 +508,8 @@ section {
 
   .right-contact {
     flex: 3;
-    margin-left: 3rem;
-    margin-right: 1rem;
+    margin-left: 5rem;
+    margin-right: 6rem;
 
     .input-control {
       margin: 1.5rem 0;

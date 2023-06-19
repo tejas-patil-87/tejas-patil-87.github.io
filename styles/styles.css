@@ -343,7 +343,7 @@ section {
   z-index: -1;
   transform: translate(-50%, -50%);
   font-weight: 800;
-  font-size: 5rem !important;
+  font-size: 5rem;
 }
 
 .skill-img img {
@@ -423,8 +423,8 @@ section {
 }
 .contact-content-con .right-contact {
   flex: 3;
-  margin-left: 3rem;
-  margin-right: 1rem;
+  margin-left: 5rem;
+  margin-right: 6rem;
 }
 .contact-content-con .right-contact .input-control {
   margin: 1.5rem 0;
@@ -688,16 +688,28 @@ section {
   .theme-btn {
     width: 50px;
     height: 50px;
+    top: 1rem;
   }
   .header-cantent {
     grid-template-columns: 1fr;
     padding-bottom: 6rem;
+    gap: 2rem;
+  }
+  .Btn {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 2rem;
+    padding-bottom: 6rem;
+  }
+  .left-header {
+    grid-row: 1;
   }
   .left-header .h-shape {
     display: none;
   }
   .right-header {
-    grid-row: 1;
+    grid-row: 2;
     width: 90%;
     margin: 0 auto;
   }
@@ -708,12 +720,20 @@ section {
     margin: 0 auto;
     width: 90%;
     background-color: inherit;
-    margin-top: 1.5rem;
+    margin-top: 5rem;
   }
   .header-cantent .left-header .image img {
     width: 85vw;
     height: 55vh;
-    margin: 0 1rem;
+  }
+  .main-title h2 .big-text {
+    font-size: 2.5rem !important;
+  }
+  .main-title h2 {
+    font-size: 1rem;
+  }
+  .main-title h2 span {
+    font-size: 1.5rem !important;
   }
   .about-contanier {
     padding: 0;
@@ -722,6 +742,8 @@ section {
   .about-contanier .right {
     grid-template-columns: 1fr;
     padding-top: 2.5rem;
+    display: grid;
+    margin-bottom: 9rem;
   }
   .contact-content-con {
     flex-direction: column;
@@ -738,9 +760,28 @@ section {
   .right #portfolio {
     margin-top: 0rem !important;
   }
+  .website {
+    margin-bottom: 10rem !important;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    width: 95% !important;
+  }
+  .contact-info {
+    font-size: 0.8rem;
+    padding: 1rem;
+  }
+  .right-contact {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-bottom: 10rem;
+    padding: 1rem;
+  }
+  .submit-btn .main-btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
   .controlls {
-    top: auto;
-    bottom: 0;
+    bottom: -4rem;
     flex-direction: row;
     justify-content: center;
     left: 50%;
@@ -765,7 +806,7 @@ section {
     margin-top: 1.5rem;
   }
   .section {
-    padding: 2rem 2.5rem;
+    padding: 2rem 0.5rem;
   }
   .main-title h2 span {
     font-size: 2.5rem;
