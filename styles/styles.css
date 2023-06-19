@@ -361,10 +361,12 @@ section {
 }
 .contact-content-con .left-contact {
   flex: 2;
+  padding: 1.5rem;
 }
 .contact-content-con .left-contact h4 {
   margin-top: 1rem;
   font-size: 2rem;
+  text-align: center;
   text-transform: uppercase;
 }
 .contact-content-con .left-contact p {
