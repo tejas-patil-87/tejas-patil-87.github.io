@@ -11,13 +11,8 @@
         width: 50px;
         height: 50px;
         top: 1rem;
+        position: absolute;
     }
-
-    // .main-content {
-    //     display: grid !important;
-    //     grid-row: 1;
-
-    // }
 
     .header-cantent {
         grid-template-columns: 1fr;
@@ -31,7 +26,7 @@
         justify-content: center;
         justify-items: center;
         gap: 2rem;
-        padding-bottom: 6rem;
+
     }
 
     .left-header {
@@ -87,7 +82,7 @@
             grid-template-columns: 1fr;
             padding-top: 2.5rem;
             display: grid;
-            margin-bottom: 9rem;
+
         }
     }
 
@@ -115,7 +110,7 @@
     }
 
     .website {
-        margin-bottom: 10rem !important;
+
         margin-right: .5rem;
         margin-left: 0.5rem;
         width: 95% !important;
@@ -123,14 +118,12 @@
 
     .contact-info {
         font-size: 0.8rem;
-        padding: 1rem;
+        padding: 0.1rem;
     }
 
     .right-contact {
         margin-left: 0 !important;
         margin-right: 0 !important;
-        margin-bottom: 10rem;
-
         padding: 1rem;
     }
 
@@ -142,22 +135,59 @@
     }
 
     //
+    .theme-btn {
+        left: 2% !important;
+    }
+
+    .mob {
+        position: absolute !important;
+        top: 2%;
+        right: 3vw;
+        width: 70px !important;
+        height: 50px;
+        border-radius: 0 !important;
+        // padding: 1rem;
+        cursor: pointer;
+        background-color: var(--color-grey-4);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0 3px 15px rgba(0, 0, 0, .3);
+        transition: all .1s ease-in-out;
+
+        &:active {
+            transform: translateY(-3px);
+        }
+
+        i {
+            font-size: 1.4rem;
+            color: var(--color-grey-2);
+            pointer-events: none;
+        }
+    }
 
     .controlls {
 
-        // top: auto;
-        bottom: -4rem;
-        flex-direction: row;
-        justify-content: center;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        color: var(--color-grey-5);
-        margin-top: 3rem;
+
+
+        top: 35vh;
 
         .control {
-            // position: fixed;
-            margin: 1rem .3rem;
+            padding: 1rem;
+            cursor: pointer;
+            background-color: var(--color-grey-4);
+            width: 70px !important;
+            height: 55px;
+            // border-style:groove;
+            border-radius: 0% !important;
+
+            align-items: center;
+            justify-content: center;
+            margin: .7rem 0;
+            box-shadow: var(--box-shadow-1);
+
+
         }
     }
 }

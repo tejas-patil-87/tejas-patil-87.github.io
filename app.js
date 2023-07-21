@@ -40,9 +40,11 @@ function PageTransitions() {
 }
 
 PageTransitions();
+// first parameter is id of country drop-down and second parameter is id of state drop-down
 
-populateCountries("country", "state"); // first parameter is id of country drop-down and second parameter is id of state drop-down
+populateCountries("country", "state");
 
+//backend logic
 var form = document.getElementById("sheetdb-form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -62,7 +64,7 @@ form.addEventListener("submit", (e) => {
       // you can put any JS code here
       // window.open("page2.html", "_blank");
       form.reset();
-      console.log("data stored sucessfully");
+      console.log("data stored successfully");
     });
 });
 
@@ -78,6 +80,47 @@ formContact.addEventListener("click", (e) => {
       // you can put any JS code here
       // window.open("page2.html", "_blank");
       formContact.reset();
-      console.log("data stored sucessfully");
+      console.log("data stored successfully");
     });
+});
+
+//menu hide
+document.addEventListener("DOMContentLoaded", function () {
+  function hideControlsOnMobile() {
+    const controlsElement = document.querySelector(".controlls");
+    const mobClick = document.querySelector(".mob");
+    const viewportWidth = window.innerWidth;
+
+    if (controlsElement && viewportWidth <= 768) {
+      // Check if the element exists and viewport is mobile
+      controlsElement.style.display = "none"; // Hide the controls initially
+
+      //
+      mobClick.addEventListener("click", function (event) {
+        const clickedElement = event.target;
+        if (controlsElement.style.display === "none") {
+          controlsElement.style.display = "flex";
+        } else {
+          controlsElement.style.display = "nome";
+        }
+      });
+
+      //
+
+      controlsElement.addEventListener("click", function (event) {
+        const clickedElement = event.target;
+        if (clickedElement.classList.contains("control")) {
+          controlsElement.style.display = "none";
+        }
+      });
+    } else {
+      controlsElement.style.display = "flex"; // Show the controls if viewport is not mobile
+    }
+  }
+
+  // Call the function initially
+  hideControlsOnMobile();
+
+  // Call the function whenever the window is resized
+  window.addEventListener("resize", hideControlsOnMobile);
 });

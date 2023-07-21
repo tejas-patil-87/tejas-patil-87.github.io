@@ -111,7 +111,7 @@ section {
   position: fixed;
   z-index: 10;
   top: 50%;
-  right: 3%;
+  right: 3vw;
   display: flex;
   flex-direction: column;
   transform: translateY(-50%);
@@ -171,9 +171,13 @@ section {
   pointer-events: none;
 }
 
+.mob {
+  display: none;
+}
+
 .theme-btn {
-  top: 5%;
-  right: 3%;
+  top: 1vh;
+  right: 3vw;
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -691,6 +695,7 @@ section {
     width: 50px;
     height: 50px;
     top: 1rem;
+    position: absolute;
   }
   .header-cantent {
     grid-template-columns: 1fr;
@@ -702,7 +707,6 @@ section {
     justify-content: center;
     justify-items: center;
     gap: 2rem;
-    padding-bottom: 6rem;
   }
   .left-header {
     grid-row: 1;
@@ -745,7 +749,6 @@ section {
     grid-template-columns: 1fr;
     padding-top: 2.5rem;
     display: grid;
-    margin-bottom: 9rem;
   }
   .contact-content-con {
     flex-direction: column;
@@ -763,37 +766,63 @@ section {
     margin-top: 0rem !important;
   }
   .website {
-    margin-bottom: 10rem !important;
     margin-right: 0.5rem;
     margin-left: 0.5rem;
     width: 95% !important;
   }
   .contact-info {
     font-size: 0.8rem;
-    padding: 1rem;
+    padding: 0.1rem;
   }
   .right-contact {
     margin-left: 0 !important;
     margin-right: 0 !important;
-    margin-bottom: 10rem;
     padding: 1rem;
   }
   .submit-btn .main-btn {
     width: 100% !important;
     justify-content: center !important;
   }
-  .controlls {
-    bottom: -4rem;
-    flex-direction: row;
+  .theme-btn {
+    left: 2% !important;
+  }
+  .mob {
+    position: absolute !important;
+    top: 2%;
+    right: 3vw;
+    width: 70px !important;
+    height: 50px;
+    border-radius: 0 !important;
+    cursor: pointer;
+    background-color: var(--color-grey-4);
+    display: flex;
     justify-content: center;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    color: var(--color-grey-5);
-    margin-top: 3rem;
+    align-items: center;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.3);
+    transition: all 0.1s ease-in-out;
+  }
+  .mob:active {
+    transform: translateY(-3px);
+  }
+  .mob i {
+    font-size: 1.4rem;
+    color: var(--color-grey-2);
+    pointer-events: none;
+  }
+  .controlls {
+    top: 35vh;
   }
   .controlls .control {
-    margin: 1rem 0.3rem;
+    padding: 1rem;
+    cursor: pointer;
+    background-color: var(--color-grey-4);
+    width: 70px !important;
+    height: 55px;
+    border-radius: 0% !important;
+    align-items: center;
+    justify-content: center;
+    margin: 0.7rem 0;
+    box-shadow: var(--box-shadow-1);
   }
 }
 @media screen and (max-width: 1432px) {
