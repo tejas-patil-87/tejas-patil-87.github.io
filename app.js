@@ -124,3 +124,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // Call the function whenever the window is resized
   window.addEventListener("resize", hideControlsOnMobile);
 });
+
+//href
+// main.js
+import { resumeLink, linkedInLink } from "./config.js";
+// Get the download link element and update its 'href' attribute
+const resumeLinkElement = document.getElementById("resume-link");
+resumeLinkElement.href = resumeLink;
+
+// Get the LinkedIn link element and update its 'href' attribute
+const linkedInLinkElement = document.getElementById("linkedin-link");
+linkedInLinkElement.href = linkedInLink;
