@@ -25,8 +25,8 @@
           theme === "dark" ? "#171411" : "#faf8f4";
       })();
     </script>
-    <link rel="stylesheet" href="styles/styles.css?v=3" />
-    <script type="module" src="app.js?v=2"></script>
+    <link rel="stylesheet" href="styles/styles.css?v=4" />
+    <script type="module" src="app.js?v=3"></script>
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -465,67 +465,24 @@
               Navi Mumbai, Maharashtra, India
             </p>
           </div>
-          <form
-            class="contact-form"
-            id="contact-form"
-            action="https://formsubmit.co/ajax/tejasvp87@gmail.com"
-            method="post"
-          >
-            <input
-              type="hidden"
-              name="_subject"
-              value="New portfolio contact message"
-            />
-            <input
-              type="text"
-              name="_honey"
-              autocomplete="off"
-              tabindex="-1"
-              aria-hidden="true"
-              style="display: none"
-            />
-            <label for="first-name">Your name</label>
-            <input
-              id="first-name"
-              name="name"
-              autocomplete="name"
-              placeholder="Name"
-              maxlength="100"
-              required
-            />
-            <label for="email">Email address</label>
-            <input
-              id="email"
-              name="email"
-              type="email"
-              autocomplete="email"
-              placeholder="you@example.com"
-              maxlength="254"
-              required
-            />
-            <label for="message">How can I help?</label>
-            <textarea
-              id="message"
-              name="message"
-              rows="4"
-              placeholder="Write your message..."
-              maxlength="4000"
-              required
-            ></textarea>
-            <button class="button button-primary submit-button" type="submit">
-              Send message <span aria-hidden="true">↗</span>
-            </button>
-            <p
-              class="form-status"
-              id="form-status"
-              role="status"
-              aria-live="polite"
-            ></p>
-            <p class="form-privacy-note">
-              Messages are processed by FormSubmit. Please don’t include
-              passwords, account numbers, or other sensitive information.
+          <div class="contact-card">
+            <p class="eyebrow">EMAIL DIRECTLY</p>
+            <h3>Start a conversation</h3>
+            <p>
+              The button opens your email app with a message addressed to me.
+              Review your message there before sending.
             </p>
-          </form>
+            <a
+              class="button button-primary"
+              href="mailto:tejasvp87@gmail.com?subject=Portfolio%20enquiry"
+            >
+              Open email app <span aria-hidden="true">↗</span>
+            </a>
+            <p class="contact-privacy-note">
+              Please don’t include passwords, account numbers, or other
+              sensitive information.
+            </p>
+          </div>
         </div>
       </section>
     </main>

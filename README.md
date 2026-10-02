@@ -35,11 +35,9 @@ This project can be hosted with GitHub Pages:
 
 The hero's **Download resume** button links to a Google Drive file. To replace the resume without changing the website link, upload a new version of the same Drive file using **Manage versions**. Keep its sharing set to **Anyone with the link — Viewer** if public downloads are intended.
 
-### Contact form
+### Contact
 
-The contact form submits to FormSubmit and emails submissions to the configured recipient. The form must be activated through the verification email from FormSubmit before submissions can be delivered. Its endpoint and recipient are set in the `action` attribute of the form in `index.html`.
-
-The form includes a honeypot field, browser-side required-field validation, and input length limits. These are basic spam-reduction measures, not a replacement for server-side abuse protection. Contact messages are processed by FormSubmit; do not submit passwords, account numbers, or other sensitive information.
+The contact section uses a `mailto:` link, which opens the visitor's configured email app. The portfolio does not transmit messages through a third-party form service. Update the recipient address in the `mailto:` links in `index.html` if needed.
 
 ## Privacy
 

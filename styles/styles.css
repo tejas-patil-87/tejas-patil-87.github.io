@@ -827,7 +827,7 @@ h2 {
   font-size: 12px;
 }
 
-.contact-form {
+.contact-card {
   display: flex;
   flex-direction: column;
   padding: clamp(22px, 4vw, 34px);
@@ -837,55 +837,29 @@ h2 {
   box-shadow: var(--shadow);
 }
 
-.contact-form label {
-  margin: 0 0 7px;
+.contact-card h3 {
+  margin-bottom: 10px;
   color: var(--text);
-  font-size: 12px;
-  font-weight: 700;
+  font-family: var(--font-heading);
+  font-size: 22px;
+  letter-spacing: -0.04em;
 }
 
-.contact-form input:not([type="hidden"]):not([name="_honey"]),
-.contact-form textarea {
-  width: 100%;
-  margin-bottom: 18px;
-  padding: 12px 13px;
-  border: 1px solid var(--line);
-  border-radius: 5px;
-  background: var(--bg);
-  color: var(--text);
+.contact-card > p:not(.eyebrow) {
+  max-width: 490px;
+  color: var(--muted);
   font-size: 13px;
+  line-height: 1.8;
 }
 
-.contact-form input::placeholder,
-.contact-form textarea::placeholder {
-  color: var(--muted);
-  opacity: 0.75;
-}
-
-.contact-form textarea {
-  min-height: 125px;
-  resize: vertical;
-}
-
-.contact-form .submit-button {
+.contact-card .button {
   align-self: flex-start;
+  margin-top: 8px;
 }
 
-.form-status {
-  min-height: 1.5em;
-  margin: 13px 0 0;
+.contact-card .contact-privacy-note {
+  margin: 17px 0 0;
   color: var(--success);
-  font-size: 12px;
-  line-height: 1.6;
-}
-
-.form-status.is-error {
-  color: #c85c4a;
-}
-
-.form-privacy-note {
-  margin: 4px 0 0;
-  color: var(--muted);
   font-size: 11px;
   line-height: 1.6;
 }
@@ -1147,7 +1121,7 @@ h2 {
     gap: 12px;
   }
 
-  .contact-form {
+  .contact-card {
     padding: 22px;
   }
 
