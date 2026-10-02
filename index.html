@@ -25,7 +25,7 @@
           theme === "dark" ? "#171411" : "#faf8f4";
       })();
     </script>
-    <link rel="stylesheet" href="styles/styles.css?v=4" />
+    <link rel="stylesheet" href="styles/styles.css?v=5" />
     <script type="module" src="app.js?v=3"></script>
   </head>
   <body>
@@ -469,17 +469,33 @@
             <p class="eyebrow">EMAIL DIRECTLY</p>
             <h3>Start a conversation</h3>
             <p>
-              The button opens a Gmail draft addressed to me. Sign in to Gmail,
-              review your message, and send it when ready.
+              Choose your email service. Each option opens a draft addressed to
+              me; review your message and send it when ready.
             </p>
-            <a
-              class="button button-primary"
-              href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=tejasvp87%40gmail.com&amp;su=Portfolio%20enquiry"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Compose in Gmail <span aria-hidden="true">↗</span>
-            </a>
+            <div class="contact-actions">
+              <a
+                class="button button-primary"
+                href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=tejasvp87%40gmail.com&amp;su=Portfolio%20enquiry"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Gmail <span aria-hidden="true">↗</span>
+              </a>
+              <a
+                class="button button-secondary"
+                href="https://outlook.office.com/mail/deeplink/compose?to=tejasvp87%40gmail.com&amp;subject=Portfolio%20enquiry"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Outlook <span aria-hidden="true">↗</span>
+              </a>
+              <a
+                class="button button-secondary"
+                href="mailto:tejasvp87@gmail.com?subject=Portfolio%20enquiry"
+              >
+                Other email app <span aria-hidden="true">↗</span>
+              </a>
+            </div>
             <p class="contact-privacy-note">
               Please don’t include passwords, account numbers, or other
               sensitive information.
