@@ -53,27 +53,18 @@ if (experienceDurations.length > 0 && experienceCurrentMonth) {
     today.getMonth() -
     startDate.getMonth();
   const years = Math.floor(elapsedMonths / 12);
-  const months = elapsedMonths % 12;
   const currentMonthLabel = new Intl.DateTimeFormat("en", {
     month: "long",
     year: "numeric",
   }).format(today);
-  const durationParts = [];
-
-  if (years > 0) {
-    durationParts.push(`${years} ${years === 1 ? "year" : "years"}`);
-  }
-
-  if (months > 0) {
-    durationParts.push(`${months} ${months === 1 ? "month" : "months"}`);
-  }
+  const durationLabel = `${years} ${years === 1 ? "year" : "years"}`;
 
   experienceCurrentMonth.dateTime = `${today.getFullYear()}-${String(
     today.getMonth() + 1,
   ).padStart(2, "0")}`;
   experienceCurrentMonth.textContent = currentMonthLabel;
   experienceDurations.forEach((element) => {
-    element.textContent = durationParts.join(", ");
+    element.textContent = durationLabel;
   });
 }
 
