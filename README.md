@@ -37,7 +37,7 @@ The hero's **Download resume** button links to a Google Drive file. To replace t
 
 ### Contact
 
-The contact section uses a `mailto:` link, which opens the visitor's configured email app. The portfolio does not transmit messages through a third-party form service. Update the recipient address in the `mailto:` links in `index.html` if needed.
+The contact section links to a Gmail compose draft. Visitors must be signed in to Gmail to send a message. The portfolio does not transmit messages through a third-party form service. Update the recipient address in the Gmail compose URL and `mailto:` link in `index.html` if needed.
 
 ## Privacy
 
