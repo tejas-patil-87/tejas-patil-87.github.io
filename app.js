@@ -1,4 +1,4 @@
-import { linkedInLink } from "./config.js";
+import { linkedInLink } from "./config.js?v=2";
 
 const linkedInLinkElement = document.getElementById("linkedin-link");
 const menuToggle = document.querySelector(".menu-toggle");
