@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48">
+  <path
+    d="M24 3 41 11v14c0 9-7 16-17 21C14 41 7 34 7 25V11z"
+    fill="#221e19"
+    stroke="#f0ad58"
+    stroke-linejoin="round"
+    stroke-width="2"
+  />
+  <text
+    x="24"
+    y="30"
+    fill="#f0ad58"
+    font-family="Arial, sans-serif"
+    font-size="18"
+    font-weight="900"
+    letter-spacing="-2"
+    text-anchor="middle"
+  >TP</text>
+  <circle cx="37" cy="12" r="8" fill="#221e19" stroke="#f0ad58" stroke-width="1.6" />
+  <path
+    d="m33.5 12 2.2 2.2 4-4.5"
+    fill="none"
+    stroke="#8fc9a2"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="2"
+  />
+</svg>

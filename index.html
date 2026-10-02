@@ -1,340 +1,550 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Tejas Vilas Patil is a Quality Analyst pursuing an SDET career, with over four years of experience in QA and test automation."
+    />
+    <meta name="theme-color" content="#171411" />
+    <title>Tejas Vilas Patil — QA & Test Automation</title>
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg?v=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,700;1,100&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" href="img/Tejas%20Patil.png">
-    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+        const theme = savedTheme === "light" ? "light" : "dark";
+        document.documentElement.dataset.theme = theme;
+        document.querySelector('meta[name="theme-color"]').content =
+          theme === "dark" ? "#171411" : "#faf8f4";
+      })();
+    </script>
+    <link rel="stylesheet" href="styles/styles.css?v=3" />
+    <script type="module" src="app.js"></script>
   </head>
-  <body class="main-content">
-    <header class="section sec1 header active" id="home">
-      <div class="header-cantent">
-        <div class="left-header">
-          <div class="h-shape"></div>
-          <div class="image">
-            <img src="img/My project.png" alt="" />
-          </div>
-        </div>
-        <div class="right-header">
-          <h1 class="name">
-            Hi ,I'm <span>Tejas Patil</span>
-            A Software Tester
-          </h1>
-          <p>
-            Experienced Software Tester with hands-on background in testing
-            various development projects.Successful at testing based on product
-            requirements to produce on-target deliverables.Proven skills in
-            completing black, white and grey box tests. Background writing and
-            implementing test cases, developing testing plans and identifying
-            use cases. Fully versed in complete SDLC.
-          </p>
-          <div class="Btn" >
-            <div class="btn-con">
-              <a target="_blank" id="resume-link" class="main-btn">
-                <span class="btn-text">Resume</span>
-                <span class="btn-icon"><i class="fas fa-download"></i></span>
-              </a>
-            </div>  
-            
-            <div class="linkedin">
-              <a target="_blank" id="linkedin-link" class="ldin-btn">
-                <span class="btn-text">LinkedIn</span>
-                <span class="btn-icon"><i class="fa-brands fa-linkedin"></i></span>
-              </a>
-            </div>
-            
-                
-        </div>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home" aria-label="Tejas Vilas Patil home">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 48 48" focusable="false">
+              <path class="brand-shield" d="M24 3 41 11v14c0 9-7 16-17 21C14 41 7 34 7 25V11z" />
+              <text class="brand-monogram" x="24" y="30" text-anchor="middle">TP</text>
+              <circle class="brand-check-bg" cx="37" cy="12" r="8" />
+              <path class="brand-check" d="m33.5 12 2.2 2.2 4-4.5" />
+            </svg>
+          </span>
+          <span class="brand-name">Tejas Vilas Patil</span>
+        </a>
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span aria-hidden="true">☰</span>
+        </button>
+        <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#experience">Experience</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button
+          class="theme-toggle"
+          type="button"
+          aria-label="Switch to dark theme"
+        >
+          <span aria-hidden="true">◐</span>
+        </button>
       </div>
     </header>
-    <main>
-      <section class="section sec2 about" id="about">
-        <div class="main-title">
-          <h2>About <span>me </span> <span class="big-text">My Stats</span></h2>
-        </div>
-        <div class="about-contanier">
-          <div class="aboutus">
-            <div class="right">
-                <h2 id="portfolio"><strong>Portfolio</strong></h2>
-                <p>Dynamic Software Tester with experience writing test scripts, debugging and implementing automation tests to help applications run smoothly. Collaborates with software team in continuous build and deployment process. Excels at learning new software tools and best practices in software quality assurance.
-                </p>
-                <hr>
-                <h2 id="skills"><strong>Skills</strong></h2>
-                <a class="skill-img" align="center">
-                    <img class="testing" src="img/Software testing.png" alt="Software-testing" width="60" height="40">
-                    <img src="img/selenium-logo.svg" alt="Selenium" width="40" height="40">
-                    <img src="img/icons8-jira.svg" alt="JIRA" width="40" height="40">
-                    <img src="img/confluence.png" alt="confluence" width="40" height="40">
-                    <img src="img/java.svg" alt="Java" width="40" height="40">
-                    <!-- <img src="Resource/Python_logo_icon.png" alt="Python" width="40" height="40"> -->
-                    <img src="img/eclipse.svg" alt="Eclipse" width="40" height="40">
-                    <img src="img/bitbucket.png" alt="Bitbucket" width="40" height="40">
-                    <img src="img/cypress.svg" alt="cypress" width="40" height="40">
-                </a>
 
-
-                <hr>
-                <h2 id="experience"><strong>Experience</strong></h2>
-                <h5>Software Tester</h5>
-                <h4>Rejolut Technology Solution Pvt. Ltd <span>(Sept 2022 - Till Now)</span> </h4>
-                <p> • Smart Contract Testing: Demonstrated proficiency in testing smart contracts for blockchain applications, ensuring their functionality, security, and adherence to business requirements.
-                    <br>• Skilled in testing the integration of blockchain applications with external systems or APIs, ensuring seamless data exchange and interoperability.
-                    <br>• Understanding of user experience testing principles and experience in assessing the usability and responsiveness of blockchain applications from an end-user perspective.
-                    <br>•  Experienced in verifying the immutability and integrity of data stored on the blockchain, ensuring the accuracy and consistency of data across the network.
-                    <br>• Wrote manual test cases and maintain test cases for web3 applications.
-                </p>
-                <br> 
-                <h5>Quality Analyst </h5>
-                <h4 id=" Easiloan" >Easiloan Techno Solution Pvt. Ltd <span> (Sept 2021 - Sept 2022)</span> </h4>
-                <p> • Recommended changes and corrections to developers for optimal software performance and
-                    usability.
-                    <br>• Wrote and optimized test cases to maximize the success of manual software testing with consistent,
-                    thorough approaches.
-                    <br>• Built automated test scripts to handle repetitive software testing work.
-                    <br>• Tracked, prioritized, and organized defects with Jira, working with the development team to facilitate
-                    timely corrections.
-                    <br>• Documented testing procedures for developers and future testing use.
-                    <br>• Operated under Agile and Scrum frameworks to complete releases and well-organized sprints.
-                    <br>• Resolved Content issue by myself
-                </p>
-                <br>
-                <h5>Quality Analyst</h5>
-                <h4 id=" MLT">MultiLiving Technologies Pvt. Ltd <span>(Mar 2021 - Sept 2021)</span></h4>
-                <p>• Pursued professional development opportunities to learn new testing tools and test strategies.
-                    <br>• Executed test cases, logged defects, and worked to resolve issues noted in the testing process.
-                    <br>• Developed and implemented tests to assess product quality of MultiLiving website, MultiLiving life,
-                    propel app and MLT assist app.
-                    <br>• Worked extended hours when necessary to meet deadlines.
-                    <br>• Advised manager of issues that could affect the schedule, budget, or quality of the product.
-                    <br>• Collaborated with Front end and Back End team for testing and release management to achieve high quality production of MultiLiving website, MultiLiving life, propel app, and MLT assist app.
-                    <br>• Monitored resolution of bugs, tested fixes, and helped developers tackle ongoing problems by
-                    providing QA perspective.
-                    <br>• Identified and tracked defects with Jira and supported developers in resolving problems by
-                    completing additional tests
-                </p>
-                <hr>
-                <h2 id="education"><strong>Education</strong></h2>
-                <h3 id="ExTC">Bachelor of engineering in electronics and telecommunication - (2019)</h3>
-                <p>Vishwaniketan's Institute of Management Entrepreneurship and Engineering Technology -University of Mumbai</p>
-                <hr>
+    <main id="main">
+      <section class="hero section-pad" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="status-dot"></span> QA ENGINEER · TEST AUTOMATION ·
+              SDET CAREER PATH
+            </p>
+            <p class="hero-location">Navi Mumbai, Maharashtra</p>
+            <h1>
+              Quality built<br />into every <span class="accent">release.</span>
+            </h1>
+            <p class="hero-lede">
+              I’m Tejas Vilas Patil, a Quality Analyst with
+              <span data-experience-duration>5 years, 7 months</span> of
+              experience across financial products, web and mobile apps, APIs,
+              and automation.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects"
+                >Explore my work <span aria-hidden="true">↓</span></a
+              >
+              <a class="button button-secondary" href="#contact"
+                >Let’s connect <span aria-hidden="true">↓</span></a
+              >
+              <a
+                class="button button-secondary"
+                href="https://drive.google.com/uc?export=download&amp;id=1ACaw3imdVqJouhmfC4Z4W6DSnPxebMsK"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Download resume <span aria-hidden="true">↓</span>
+              </a>
             </div>
+            <div class="hero-social">
+              <a id="linkedin-link" target="_blank" rel="noreferrer"
+                >LinkedIn <span aria-hidden="true">↗</span></a
+              >
+              <span class="social-divider" aria-hidden="true"></span>
+              <a href="mailto:tejasvp87@gmail.com">tejasvp87@gmail.com</a>
+            </div>
+          </div>
+
+          <aside class="hero-card" aria-label="Quality engineering focus">
+            <div class="card-topline">
+              <span>SELENIUM · JAVA · TESTNG</span>
+              <span class="card-index">QA AUTOMATION</span>
+            </div>
+            <div class="terminal-window">
+              <div class="terminal-bar" aria-hidden="true">
+                <i></i><i></i><i></i>
+              </div>
+              <p class="code-muted">// a quality-first approach</p>
+              <p><span class="code-purple">const</span> qa = {</p>
+              <p class="code-indent">
+                <span class="code-blue">automation</span>:
+                <span class="code-green">["Selenium", "Cypress"]</span>,
+              </p>
+              <p class="code-indent">
+                <span class="code-blue">testing</span>:
+                <span class="code-green">["API", "UI", "E2E"]</span>,
+              </p>
+              <p class="code-indent">
+                <span class="code-blue">focus</span>:
+                <span class="code-green">"reliable releases"</span>
+              </p>
+              <p>};</p>
+              <div class="terminal-rule"></div>
+              <p class="terminal-foot">
+                <span class="status-dot"></span> Focused on reliable releases
+              </p>
+            </div>
+            <div class="focus-tags" aria-label="Tools">
+              <span>Selenium</span><span>Java</span><span>Cypress</span
+              ><span>Jira</span>
+            </div>
+          </aside>
         </div>
-            <div class="about-item">
-                  <div class="abt-text">
-                    
-                  </div>
+        <div class="container hero-bottom">
+          <span>QUALITY ASSURANCE · AUTOMATION · SDET</span>
+          <a href="#about"
+            >SCROLL TO EXPLORE <span aria-hidden="true">↓</span></a
+          >
+        </div>
+      </section>
+
+      <section class="section-pad section-soft" id="about">
+        <div class="container about-grid">
+          <div>
+            <p class="eyebrow">A LITTLE ABOUT ME</p>
+            <h2>
+              Quality is more than<br />finding
+              <span class="accent">bugs.</span>
+            </h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              I’m a results-driven Quality Analyst with
+              <span data-experience-duration>5 years, 7 months</span> of
+              experience improving product quality and user journeys across
+              financial services, web, mobile, and blockchain products. My work
+              spans functional, regression, end-to-end, API, and user acceptance
+              testing.
+            </p>
+            <p>
+              Alongside hands-on manual QA, I build and use automation with
+              Cypress and Selenium. I’m pursuing my career as an SDET—bringing
+              testing expertise closer to code, reusable frameworks, and CI/CD.
+            </p>
+            <a class="text-link" href="#experience"
+              >Explore my experience <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad" id="skills">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">TOOLS & APPROACH</p>
+              <h2>Building my <span class="accent">toolkit.</span></h2>
+            </div>
+            <p class="section-intro">
+              I combine hands-on testing with practical automation to catch
+              issues early, protect key user journeys, and help teams ship with
+              confidence.
+            </p>
+          </div>
+          <div class="skills-grid">
+            <article class="skill-card">
+              <span class="skill-number">01</span>
+              <h3>Test automation</h3>
+              <p>
+                Build maintainable browser checks for critical journeys with
+                Selenium WebDriver, Java, TestNG, and Maven, as well as Cypress
+                and JavaScript. Focus on reusable coverage and clear failure
+                feedback.
+              </p>
+              <div class="tag-list">
+                <span>Selenium</span><span>Cypress</span><span>Java</span
+                ><span>TestNG</span><span>Maven</span><span>JavaScript</span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <span class="skill-number">02</span>
+              <h3>Quality assurance</h3>
+              <p>
+                Test features across UI and APIs, covering functional,
+                regression, edge cases, UAT, and performance. Use Postman,
+                JMeter, and SQL to check behavior and investigate data.
+              </p>
+              <div class="tag-list">
+                <span>Postman</span><span>JMeter</span><span>UAT</span
+                ><span>API testing</span><span>SQL</span>
+              </div>
+            </article>
+            <article class="skill-card">
+              <span class="skill-number">03</span>
+              <h3>Team workflow</h3>
+              <p>
+                Partner with product and engineering from requirement review
+                through release: shape test scenarios, report reproducible
+                defects, retest fixes, and communicate risk clearly.
+              </p>
+              <div class="tag-list">
+                <span>Jira</span><span>Git & GitHub</span><span>Docker</span
+                ><span>CI/CD</span><span>Agile</span>
+              </div>
+            </article>
+          </div>
+          <p class="skills-note">
+            Ways of working: Agile · Scrum · Waterfall · risk-based testing ·
+            clear defect reporting
+          </p>
+        </div>
+      </section>
+
+      <section class="section-pad" id="projects">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">SELECTED WORK</p>
+              <h2>Automation in <span class="accent">practice.</span></h2>
+            </div>
+            <p class="section-intro">
+              A high-level look at framework patterns and product testing from
+              my experience.
+            </p>
+          </div>
+          <div class="projects-grid">
+            <article class="project-card project-featured">
+              <div class="project-meta">
+                <span>UI TEST AUTOMATION</span><span>JAVA · SELENIUM</span>
+              </div>
+              <h3>Reusable Selenium test framework</h3>
+              <p>
+                A Java and Selenium framework organized around page objects and
+                reusable test utilities, with TestNG suites, configurable
+                browser setup for Chrome, Firefox, and Edge, retry handling,
+                parallel client runs, and execution reporting.
+              </p>
+              <div class="tag-list">
+                <span>Page Object Model</span><span>TestNG</span
+                ><span>Maven</span> <span>Extent Reports</span
+                ><span>Allure</span>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-meta">
+                <span>FINANCIAL PRODUCTS</span><span>QA · CYPRESS</span>
+              </div>
+              <h3>BlinkX website & API test coverage</h3>
+              <p>
+                Cypress coverage for stock-list API responses and edge cases,
+                company pages, lead forms, footer links, sitemap URLs, and
+                demat-account journeys.
+              </p>
+              <div class="tag-list">
+                <span>API testing</span><span>UI testing</span
+                ><span>Edge cases</span><span>Mochawesome</span>
+              </div>
+            </article>
+            <article class="project-card">
+              <div class="project-meta">
+                <span>WEB3 PRODUCTS</span><span>QUALITY ASSURANCE</span>
+              </div>
+              <h3>Blockchain application testing</h3>
+              <p>
+                Validated external API integrations, user experience, and data
+                synchronization across Web3 projects, while maintaining test
+                cases and automating end-to-end flows.
+              </p>
+              <div class="tag-list">
+                <span>Xeni</span><span>Nublo.ai</span><span>Dyutam</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad section-soft" id="experience">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">CAREER JOURNEY</p>
+              <h2>Where I’ve <span class="accent">made an impact.</span></h2>
+            </div>
+            <p class="section-intro">
+              Quality work since <time datetime="2021-03">March 2021</time> —
+              <time id="experience-current-month"></time>
+              (<span data-experience-duration>5 years, 7 months</span>) across finance,
+              consumer apps, and Web3.
+            </p>
+          </div>
+          <div class="timeline">
+            <article class="timeline-item">
+              <div class="timeline-date">NOV 2023 — PRESENT</div>
+              <div class="timeline-content">
+                <p class="role-label">SOFTWARE TESTER</p>
+                <h3>We3 Tech Works Pvt. Ltd.</h3>
+                <p>
+                  Test investment and financial products for Motilal Oswal and
+                  BlinkX. Cover IAP and RIA journeys, dashboard data, API and
+                  GUI behavior, UAT, performance, and CRM integration. Built a
+                  Cypress automation framework and received the BlinkX Debut
+                  Award.
+                </p>
+                <div class="tag-list">
+                  <span>Cypress</span><span>API & GUI</span><span>UAT</span
+                  ><span>BlinkX Debut Award</span>
+                </div>
+                <p class="project-list">
+                  <strong>Projects:</strong> Motilal Oswal IAP, Rise App,
+                  Restock RIA portal, BlinkX LeadSquare integration, BlinkX CMS.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-date">SEP 2022 — JUL 2023</div>
+              <div class="timeline-content">
+                <p class="role-label">SOFTWARE TESTER</p>
+                <h3>Rejolut Technology Solutions Pvt. Ltd.</h3>
+                <p>
+                  Tested Web3 and blockchain products, integrated external APIs,
+                  checked data synchronization and usability, maintained manual
+                  test cases, and automated end-to-end user flows with Cypress.
+                </p>
+                <div class="tag-list">
+                  <span>Cypress</span><span>API integration</span
+                  ><span>Web3</span>
+                </div>
+                <p class="project-list">
+                  <strong>Projects:</strong> Xeni, Nublo.ai, Dyutam.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-date">SEP 2021 — SEP 2022</div>
+              <div class="timeline-content">
+                <p class="role-label">QUALITY ANALYST</p>
+                <h3>Easiloan Techno Solution Pvt. Ltd.</h3>
+                <p>
+                  Wrote and optimized manual test cases, created automated test
+                  scripts for repetitive checks, tracked defects in Jira, and
+                  collaborated with developers through Agile releases. Created
+                  and refined more than 50 detailed test cases.
+                </p>
+                <div class="tag-list">
+                  <span>Test cases</span><span>Automation scripts</span
+                  ><span>Jira</span>
+                </div>
+                <p class="project-list">
+                  <strong>Projects:</strong> Easiloan Website, Easiloan Customer
+                  App, Salesforce integration.
+                </p>
+              </div>
+            </article>
+            <article class="timeline-item">
+              <div class="timeline-date">MAR 2021 — AUG 2021</div>
+              <div class="timeline-content">
+                <p class="role-label">QUALITY ANALYST</p>
+                <h3>MultiLiving Technologies Pvt. Ltd.</h3>
+                <p>
+                  Tested web and mobile products, executed test cases, logged
+                  and retested defects, and supported teams through bug fixes
+                  and release management.
+                </p>
+                <div class="tag-list">
+                  <span>Web & mobile</span><span>Regression</span
+                  ><span>Release QA</span>
+                </div>
+                <p class="project-list">
+                  <strong>Projects:</strong> MultiLiving Website, MultiLiving
+                  Life App, Propel.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-pad" id="credentials">
+        <div class="container credentials-grid">
+          <div>
+            <p class="eyebrow">LEARNING & EDUCATION</p>
+            <h2>Always <span class="accent">learning.</span></h2>
+          </div>
+          <div class="credentials-content">
+            <div class="credential-row">
+              <span class="credential-type">CERTIFICATION</span>
+              <p><strong>Advanced Software Test Specialist (ASTS)</strong></p>
+            </div>
+            <div class="credential-row">
+              <span class="credential-type">CERTIFICATIONS</span>
+              <p>
+                Crash Course on Python · Coursera<br />Introduction to
+                Programming Using Java<br />Learn JavaScript Basics · Codedamn
+              </p>
+            </div>
+            <div class="credential-row">
+              <span class="credential-type">EDUCATION</span>
+              <p>
+                <strong>B.E., Electronics and Telecommunication</strong
+                ><br />Vishwaniketan's Institute of Management Entrepreneurship
+                and Engineering Technology — University of Mumbai
+              </p>
+            </div>
+            <div class="credential-row">
+              <span class="credential-type">EDUCATION</span>
+              <p>
+                <strong>HSC (12th)</strong> · KSA Brans Jr. College<br /><strong
+                  >SSC (10th)</strong
+                >
+                · Sudhagad Education Society
+              </p>
             </div>
           </div>
         </div>
       </section>
-      <section class="section sec3 web" id="web">
-        <div class="main-title">
-          <h2>Demo <span>Website</span> <span class="big-text">My Stats</span> </h2>
-        </div>
-        <div class="website">
-          
-          <h2>Register Here</h2>
-          <form class="demo-web" id ="sheetdb-form" method ="post" action="	https://sheetdb.io/api/v1/4pm7n75xrz7xk">
-          <div class="form-body">
-            <label for="first-name">First name</label>
-            <input type="text" id="fname" name="data[first-name]" placeholder="Enter First Name" input="" onkeydown="return /[a-z]/i.test(event.key)">
-            <label for="last-name">Last name</label>
-            <input type="text" id="lname" name="data[last-name]" placeholder="Enter Last Name" input="" onkeydown="return /[a-z]/i.test(event.key)">
-            <label for="email">Email</label>
-            <input name="data[email]" autocomplete="off" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="Enter Email ID" type="text" id="userEmail">
-            <label for="mobile">Mobile</label>
-            <input name="data[mobile]" required="" autocomplete="off" pattern="[789][0-9]{9}" minlength="10" maxlength="10" placeholder="Enter Mobile Number" type="text" id="userNumber">
-            <label for="gender">Select Gender</label>
-            <div class="gender-btn">
-              <label for="Male">Male</label>
-              <input type="radio" id="html" name="data[gender]" value="Male">
-              <label for="Female">Female</label>
-              <input type="radio" id="css" name="data[gender]" value="Female">
-              <label for="Other">Other</label>
-              <input type="radio" id="css" name="data[gender]" value="Other">
-            </div>  
-            <label for="programming-language">Favorite programming language:</label>
-            <div class="fav-lang">
-              
-              <label for="Java">Java</label>
-              <input type="checkbox" id="Java" name="data[programming-language]" value="Java">&nbsp;&nbsp;
-             
-              <label for="Python">Python</label>
-              <input type="checkbox" id="Python" name="data[programming-language]" value="Python">&nbsp;&nbsp;
 
-              
-              <label for="JavaScript">JavaScript</label>
-              <input type="checkbox" id="JavaScript" name="data[programming-language]" value="JavaScript">&nbsp;&nbsp;
-              
-              <label for="C/C++">C/C++</label>
-              <input type="checkbox" id="C/C++" name="data[programming-language]" value="C/C++">&nbsp;&nbsp;
-
-              <label for="C#">C#</label>
-              <input type="checkbox" id="C#" name="data[programming-language]" value="C#">&nbsp;&nbsp;
-              
-              <label for="Kotlin">Kotlin</label>
-              <input type="checkbox" id="Kotlin" name="data[programming-language]" value="Kotlin">&nbsp;&nbsp;
-              
-              <label for="Swift">Swift</label>
-              <input type="checkbox" id="Swift" name="data[programming-language]" value="Swift">
-            </div>
-              <label for="img">Select image:</label>
-              <input type="file" id="img" name="data[img]" accept="image/*">
-              <label for="address">Address</label>
-              <textarea name="data[address]" placeholder="Enter Address" rows="5" cols="20" id="currentAddress" class="form-control" spellcheck="false"></textarea>
-              <label for="birthday">Birthday</label>
-              <input class="date" type="date" id="datePickerId" name="data[birthday]" value="09/03/1996" min="1970-01-01" max="2023-04-26" data-date-inline-picker="true" placeholder="Enter DOB">
-             
-                <script type="text/javascript" src="countries.js"></script>
-                Select Country<select id="country" name="data[country]" placeholder="Enter city"></select>
-                Select State<select name="data[state]" id="state" placeholder="Enter city"></select>
-            
-              <label for="city">City</label>
-                <input type="text" id="city" name="data[city]" placeholder="Enter city" input onkeydown="return /[a-z]/i.test(event.key)">
-               
-              <!-- <button id="reset" type="reset" class="submit" value="Refresh">Reset</button> -->
-             
+      <section class="section-pad contact-section" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <p class="eyebrow">GET IN TOUCH</p>
+            <h2>Let’s make<br />quality <span class="accent">count.</span></h2>
+            <p>
+              Interested in QA automation, SDET opportunities, or simply
+              connecting? Send me a message.
+            </p>
+            <a class="contact-email" href="mailto:tejasvp87@gmail.com"
+              >tejasvp87@gmail.com <span aria-hidden="true">↗</span></a
+            >
+            <p class="contact-location">
+              Navi Mumbai, Maharashtra, India
+            </p>
           </div>
-           <input class="submit" type="submit" value="Submit">
+          <form
+            class="contact-form"
+            id="contact-form"
+            action="https://formsubmit.co/ajax/tejasvp87@gmail.com"
+            method="post"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="New portfolio contact message"
+            />
+            <input
+              type="text"
+              name="_honey"
+              autocomplete="off"
+              tabindex="-1"
+              aria-hidden="true"
+              style="display: none"
+            />
+            <label for="first-name">Your name</label>
+            <input
+              id="first-name"
+              name="name"
+              autocomplete="name"
+              placeholder="Name"
+              maxlength="100"
+              required
+            />
+            <label for="email">Email address</label>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              autocomplete="email"
+              placeholder="you@example.com"
+              maxlength="254"
+              required
+            />
+            <label for="message">How can I help?</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Write your message..."
+              maxlength="4000"
+              required
+            ></textarea>
+            <button class="button button-primary submit-button" type="submit">
+              Send message <span aria-hidden="true">↗</span>
+            </button>
+            <p
+              class="form-status"
+              id="form-status"
+              role="status"
+              aria-live="polite"
+            ></p>
+            <p class="form-privacy-note">
+              Messages are processed by FormSubmit. Please don’t include
+              passwords, account numbers, or other sensitive information.
+            </p>
           </form>
         </div>
       </section>
-      <section class="section sec4 blogs" id="blogs">
-        <div class="blog">
-          <div class="main-title">
-            <h2>My <span>blog</span> <span class="big-text">My Stats</span> </h2>
-          </div>
-          <h1>Coming Soon</h1>
-        </div>
-      </section>
-      <section class="section sec5 contact" id="contact">
-        <div class="contact-container">
-          <div class="main-title">
-            <h2>Contact <span>Me</span> <span class="big-text">My Stats</span> </h2>
-          </div>
-          <div class="contact-content-con">
-            <div class="left-contact">
-               <h4>Contact me here</h4>
-               <div class="contact-info">
-                <div class="contact-item">
-                  <div class="icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                    Location
-                  </div>
-                  <p>
-                        : Navi Mumbai, Maharashtra, India.
-                  </p>
-                </div>
-                <div class="contact-item">
-                  <div class="icon">
-                    <i class="fas fa-envelope"></i>
-                    Email
-                  </div>
-                  <p>
-                    <a href = "mailto:tejasvp87@gmail.com">: Tejasvp87@gmail.com</a>
-                    
-                  </p>
-                </div>
-                <div class="contact-item">
-                  <div class="icon">
-                    <i class="fas fa-user-graduate"></i>
-                    Education
-                  </div>
-                  <p>
-                    : University of Mumbai
-                  </p>
-                </div>
-                <div class="contact-item">
-                  <div class="icon">
-                    <i class="fas fa-mobile"></i>
-                    Mobile Number
-                  </div>
-                  <p>
-                    <a href="tel:+919004300384">+91 9004 3003 84</a>
-                  </p>
-                </div>
-                <div class="contact-item">
-                  <div class="icon">
-                    <i class="fas fa-globe-asia"></i>
-                    language
-                  </div>
-                  <p>
-                    : English, Hindi, Marathi.
-                  </p>
-                </div>
-               </div>
-            </div>
-            <div class="right-contact">
-              <form action="https://sheetdb.io/api/v1/zjehhuuiq77qn" class="contact-form"  method="post" id="sheetdb-feedback">
-                <div class="input-control i-c-2">
-                  <input type="text" id="first-name" name="data[first-name]" placeholder="Tejas" input="" onkeydown="return /[a-z]/i.test(event.key)">
-                  <input type="text" id="last-name" name="data[last-name]" placeholder="Patil" input="" onkeydown="return /[a-z]/i.test(event.key)">
-                </div>
-                  <div class="input-control">
-                  <input autocomplete="off" pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" placeholder="name@example.com" type="text" id="userEmail"name="data[email]">
-                </div>
-                <div class="input-control">
-                  <textarea id="subject" name="data[subject]" placeholder="Type your message or share your feedback , suggestions for improvement..." style="height:200px"></textarea>
-                </div>
-                <div class="input-control">
-                  </div>
-                  <div class="submit-btn">
-                    <a href="#" class="main-btn" type="submit" value="submit">
-                      <span class="btn-text1">Submit</span>
-                      <span class="btn-text1"><i class="fa-solid fa-paper-plane"></i></span>
-                    </a>
-                  </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        </div>
-      </section>
     </main>
-    <div class="mob">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    <div class="controlls" id="controlls">
-      <div class="control control-1 active-btn" id="home-icon" data-id="home">
-        <i class="fas fa-home"> </i>
-        <br>
-        <span>Home</span>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <a class="brand" href="#home"
+          ><span class="brand-mark" aria-hidden="true"
+            ><svg viewBox="0 0 48 48" focusable="false">
+              <path class="brand-shield" d="M24 3 41 11v14c0 9-7 16-17 21C14 41 7 34 7 25V11z" />
+              <text class="brand-monogram" x="24" y="30" text-anchor="middle">TP</text>
+              <circle class="brand-check-bg" cx="37" cy="12" r="8" />
+              <path class="brand-check" d="m33.5 12 2.2 2.2 4-4.5" />
+            </svg></span
+          ><span class="brand-name">Tejas Vilas Patil</span></a
+        >
+        <p>Quality Analyst · Test Automation · SDET career path</p>
+        <p>© <span id="current-year"></span> Tejas Vilas Patil</p>
       </div>
-      <div class="control control-2" id="about-icon" data-id="about">
-        <i class="fas fa-user"> </i>
-        <br>
-        <span>About</span>
-      </div>
-     
-      <div class="control control-3" id="web-icon" data-id="web">
-        <i class="fa-sharp fa-solid fa-globe"></i>
-        <br>
-        <span>Demo Website</span>
-      </div>
-      <div class="control control-4" id="blogs-icon" data-id="blogs">
-        <i class="far fa-newspaper"> </i>
-        <br>
-        <span>Blogs</span>
-      </div>
-      <div class="control control-5" id="contact-icon" data-id="contact">
-        <i class="fas fa-envelope-open"> </i>
-        <br>
-        <span>Contact</span>
-      </div>
-    </div>
-    <div class="theme-btn">
-      <i class="fas fa-adjust"></i>
-    </div>
-    <!-- script -->
-    <script src="app.js"type="module"></script>
-    <script src="config.js" type="module"></script>
+    </footer>
   </body>
 </html>
